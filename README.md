@@ -35,3 +35,28 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 # my-portfolio
+
+##Project Structure - Future state::initial state
+
+my-portfolio/
+├── public/
+│   ├── images/
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Footer.tsx
+│   │   └── ProjectCard.tsx
+│   ├── pages/
+│   │   ├── index.tsx
+│   │   ├── about.tsx
+│   │   ├── projects.tsx
+│   │   └── contact.tsx
+│   ├── styles/
+│   │   └── globals.css
+│   └── data/
+│       └── projects.js
+├── .gitignore
+├── package.json
+└── README.md
+
