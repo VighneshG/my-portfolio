@@ -2,6 +2,7 @@
 import ProjectCard from "../components/ProjectCard";
 import "../app/globals.css";
 import Layout from "../components/Layout";
+import Head from "next/head";
 
 const Projects = () => {
   const projectList = [
@@ -26,6 +27,14 @@ const Projects = () => {
   ];
 
   return (
+    <>
+      <Head>
+        <title>Vignesh Kumar | Projects</title>
+        <meta
+          name="description"
+          content="Projects done by Vignesh Kumar"
+        />
+      </Head>
     <Layout>
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold mb-6">My Projects</h1>
@@ -36,6 +45,7 @@ const Projects = () => {
         </div>
       </div>
     </Layout>
+    </>
   );
 };
 
