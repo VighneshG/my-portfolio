@@ -3,10 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --navbar: #73d2fa;
+  --background: #ffffff; /* Light background */
+  --foreground: #171717; /* Dark foreground for text */
+  --navbar: #000000;     /* Black navbar */
+  --link-hover: #E5E5E5; /* Light gray for link hover effect */
 }
+
+nav {
+  background-color: var(--navbar);
+}
+
+a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {

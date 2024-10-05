@@ -11,7 +11,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, demoLink, repoLink }) => {
   return (
     <div className="bg-white shadow-md rounded-lg overflow-hidden p-4 mb-6">
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <h3 className="text-xl text-gray-900 font-semibold mb-2">{title}</h3>
       <p className="text-gray-700 mb-4">{description}</p>
       <div className="flex justify-between">
         {demoLink && (
