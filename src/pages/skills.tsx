@@ -48,7 +48,7 @@ export default function SkillsPage() {
       <main className="flex flex-col items-center justify-center min-h-screen bg-grey-900 text-white p-8">
         <h1 className="text-4xl font-bold mb-8">Skills</h1>
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-16"
           initial="hidden"
           animate="show"
           variants={containerVariants}
