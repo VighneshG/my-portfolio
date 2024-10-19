@@ -1,28 +1,29 @@
+// src/app/skills.tsx
 import "../app/globals.css";
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout"; // Assuming you have a Layout component
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
 const skills = [
-  { name: "TypeScript", icon: `${basePath}/icons/typescript.png` },
-  { name: "AWS CDK", icon: `${basePath}/icons/aws-cdk.png` },
-  { name: "React", icon: `${basePath}/icons/react.webp` },
-  { name: "NextJs", icon: `${basePath}/icons/nextjs.png` },
+  // AWS CDK, Typescript, React, Next Js
+  { name: "TypeScript", icon: "/icons/typescript.png" },
+  { name: "AWS CDK", icon: "/icons/aws-cdk.png" },
+  { name: "React", icon: "/icons/react.webp" },
+  { name: "NextJs", icon: "/icons/nextjs.png" },
 
-  { name: "Java", icon: `${basePath}/icons/java.png` },
-  { name: "Spring Boot", icon: `${basePath}/icons/spring-boot.png` },
-  { name: "Microservices", icon: `${basePath}/icons/microservices.png` },
-  { name: "AWS", icon: `${basePath}/icons/aws.png` },
+  // Java Stack
+  { name: "Java", icon: "./icons/java.png" },
+  { name: "Spring Boot", icon: "/icons/spring-boot.png" },
+  { name: "Microservices", icon: "/icons/microservices.png" },
+  { name: "AWS", icon: "/icons/aws.png" },
 
-  { name: "Python", icon: `${basePath}/icons/python.png` },
-  { name: "MySQL", icon: `${basePath}/icons/mysql.png` },
-  { name: "PostgreSQL", icon: `${basePath}/icons/postgresql.png` },
-  { name: "Docker", icon: `${basePath}/icons/docker.png` },
+  { name: "Python", icon: "/icons/python.png" },
+  { name: "MySQL", icon: "/icons/mysql.png" },
+  { name: "PostgreSQL", icon: "/icons/postgresql.png" },
+  { name: "Docker", icon: "/icons/docker.png" },
 
-  { name: "HTML", icon: `${basePath}/icons/html.png` },
-  { name: "CSS", icon: `${basePath}/icons/css.png` },
-  { name: "JavaScript", icon: `${basePath}/icons/javascript.png` },
+  { name: "HTML", icon: "/icons/html.png" },
+  { name: "CSS", icon: "/icons/css.png" },
+  { name: "JavaScript", icon: "/icons/javascript.png" },
 ];
 
 const containerVariants = {
