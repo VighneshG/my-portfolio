@@ -5,7 +5,7 @@ import Layout from "@/components/Layout"; // Assuming you have a Layout componen
 
 const skills = [
   // AWS CDK, Typescript, React, Next Js
-  { name: "TypeScript", icon: "/icons/typescript.png" },
+  { name: "TypeScript", icon: "my-portfolio/icons/typescript.png" },
   { name: "AWS CDK", icon: "/icons/aws-cdk.png" },
   { name: "React", icon: "/icons/react.webp" },
   { name: "NextJs", icon: "/icons/nextjs.png" },
