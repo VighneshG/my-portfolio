@@ -118,6 +118,15 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                href="/skills"
+                className="block hover:text-gray-300 transition-colors duration-300"
+                onClick={toggleMenu}
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/projects"
                 className="block hover:text-gray-300 transition-colors duration-300"
                 onClick={toggleMenu}
