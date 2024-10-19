@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Layout from "@/components/Layout";
 
-const roles = ["a Software Engineer", "a Tech Enthusiast", "a Lifelong Learner"];
+const roles = ["Software Engineer", "Tech Enthusiast", "Lifelong Learner"];
 
 const roleVariants = {
   hidden: { opacity: 0, y: 10 },
@@ -27,22 +27,32 @@ export default function HomePage() {
       <main className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
         {/* Animated Introduction */}
         <div className="text-center">
-          {/* Combining "Hello World" and "My name is" on the same line */}
-          <div className="flex justify-center items-center text-5xl font-bold">
-            <h1>Hello World!</h1>
-            <motion.h1
-              className="ml-2" // Adds space between the two texts
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-            >
-              My name is <span className="text-cyan-400">Vignesh Kumar</span>
-            </motion.h1>
-          </div>
+          {/* "Hello World!" with motion effect */}
+          <motion.h1
+            className="text-5xl font-bold"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Hello World!
+          </motion.h1>
+
+          {/* "My name is Vignesh Kumar" with motion effect */}
+          <motion.h1
+            className="text-5xl font-bold mt-4"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+          >
+            My name is{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+              Vignesh Kumar
+            </span>
+          </motion.h1>
 
           {/* Smooth Role Transition Section */}
           <div className="text-3xl mt-4 flex items-center justify-center">
-            <span>and, I am&nbsp;</span>
+            <span>and, I am a&nbsp;</span>
             <div className="inline-block">
               <AnimatePresence mode="wait">
                 <motion.span
