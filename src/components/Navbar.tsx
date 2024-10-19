@@ -10,10 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-navbar text-white p-4 sticky top-0 z-50 shadow-md">
+    <nav className="bg-navbar text-white p-6 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl font-extrabold tracking-wider">
+        <div className="text-3xl font-extrabold tracking-wider">
           Vignesh Kumar
         </div>
 
@@ -24,7 +24,7 @@ const Navbar = () => {
           aria-label="Toggle Menu"
         >
           <svg
-            className="w-6 h-6 fill-current"
+            className="w-8 h-8 fill-current"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -45,7 +45,7 @@ const Navbar = () => {
         </button>
 
         {/* Menu Items for large screens */}
-        <ul className="hidden lg:flex space-x-4 text-lg">
+        <ul className="hidden lg:flex space-x-6 text-xl"> 
           <li>
             <Link
               href="/"
