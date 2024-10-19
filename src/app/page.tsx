@@ -31,7 +31,7 @@ export default function HomePage() {
         <div className="text-center">
           {/* "Hello World!" with motion effect */}
           <motion.h1
-            className="text-3xl font-bold"
+            className="text-4xl sm:text-3xl lg:text-5xl font-bold"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -41,7 +41,7 @@ export default function HomePage() {
 
           {/* "My name is Vignesh Kumar" with motion effect */}
           <motion.h1
-            className="text-4xl font-bold mt-4"
+            className="text-5xl sm:text-4xl lg:text-6xl font-bold mt-4"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
@@ -53,7 +53,7 @@ export default function HomePage() {
           </motion.h1>
 
           {/* Smooth Role Transition Section */}
-          <div className="text-2xl mt-4 flex items-center justify-center">
+          <div className="text-2xl sm:text-3xl lg:text-4xl mt-4 flex items-center justify-center">
             {/* Add motion for the entire "and, I am a" + role section */}
             <motion.div
               className="flex items-center"
