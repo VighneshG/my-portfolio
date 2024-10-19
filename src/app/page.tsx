@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Layout from "@/components/Layout";
 
-const roles = ["Software Engineer", "Tech Enthusiast", "Lifelong Learner"];
+const roles = ["a Software Engineer", "a Tech Enthusiast", "a Lifelong Learner"];
 
 const roleVariants = {
   hidden: { opacity: 0, y: 10 },
@@ -13,11 +13,13 @@ const roleVariants = {
 
 export default function HomePage() {
   const [currentRole, setCurrentRole] = useState(0);
+  const [initialLoad, setInitialLoad] = useState(true);
 
   // Change role every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentRole((prevRole) => (prevRole + 1) % roles.length);
+      setInitialLoad(false); // Disable initial load after the first change
     }, 3000);
     return () => clearInterval(interval);
   }, []);
@@ -52,22 +54,30 @@ export default function HomePage() {
 
           {/* Smooth Role Transition Section */}
           <div className="text-3xl mt-4 flex items-center justify-center">
-            <span>and, I am a&nbsp;</span>
-            <div className="inline-block">
-              <AnimatePresence mode="wait">
-                <motion.span
-                  key={currentRole}
-                  variants={roleVariants}
-                  initial="hidden"
-                  animate="visible"
-                  exit="exit"
-                  transition={{ duration: 0.5 }}
-                  className="text-yellow-400"
-                >
-                  {roles[currentRole]}
-                </motion.span>
-              </AnimatePresence>
-            </div>
+            {/* Add motion for the entire "and, I am a" + role section */}
+            <motion.div
+              className="flex items-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.5 }}
+            >
+              <span>and, I am&nbsp;</span>
+              <div className="inline-block">
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={currentRole}
+                    variants={roleVariants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="exit"
+                    transition={{ duration: 0.5 }}
+                    className="text-yellow-400"
+                  >
+                    {roles[currentRole]}
+                  </motion.span>
+                </AnimatePresence>
+              </div>
+            </motion.div>
           </div>
 
           {/* Cool Resume Download Button with Silver/Golden Border */}
