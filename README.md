@@ -86,9 +86,10 @@ To run this project locally, follow these steps:
 
 ### Building for Production
 To create an optimized production build:
-    ```bash
+    
     npm run build
-    ```
+    
+    
 This command generates a `/.next` directory with an optimized build that can be deployed.
 
 #### Deployment
@@ -114,31 +115,31 @@ To update the roles that are animated on the homepage:
 
 If you want to adjust the color scheme of the website (background, text colors, etc.), you can modify the CSS variables in `globals.css`:
 
-    ```bash
+    
     :root {
         --background: #ffffff;  /* Light background */
         --foreground: #171717;  /* Dark text */
         --navbar: #000000;      /* Navbar background */
         --link-hover: #E5E5E5;  /* Hover color for links */
     }
-    ```
+    
 For dark mode, modify the colors under:
 
-    ```bash
+    
     @media (prefers-color-scheme: dark) {
         :root {
             --background: #0a0a0a;
             --foreground: #ededed;
         }
     }
-    ```
+    
 
 ## Future Improvements
 
-* Blog Section: Add a blog section to share technical articles and experiences.
-* Project Showcase: Expand the portfolio with detailed project showcases, including case studies and code snippets.
-* Contact Form: Include a contact form for users to reach out directly from the website.
-* SEO Improvements: Enhance SEO with proper meta tags and descriptions.
+* **Blog Section**: Add a blog section to share technical articles and experiences.
+* **Project Showcase**: Expand the portfolio with detailed project showcases, including case studies and code snippets.
+* **Contact Form**: Include a contact form for users to reach out directly from the website.
+* **SEO Improvements**: Enhance SEO with proper meta tags and descriptions.
 
 ## Contributing
 
