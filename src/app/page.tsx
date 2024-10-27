@@ -27,6 +27,14 @@ export default function HomePage() {
   return (
     <Layout>
       <main className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
+        <p>Hello World!!</p>
+        <p>Hello World!!</p>
+
+        <p>Hello World!!</p>
+        <p>Hello World!!</p>
+        <p>Hello World!!</p>
+        <p>Hello World!!</p>
+        
         {/* Animated Introduction */}
         <div className="text-center">
           {/* "Hello World!" with motion effect */}

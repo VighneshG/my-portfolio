@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-navbar text-white p-6 sticky top-0 z-50 shadow-md">
+    <nav className="bg-black/5 backdrop-blur-lg border-b border-gray-700/90 text-white p-6 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-3xl font-extrabold tracking-wider">
@@ -38,7 +38,7 @@ const Navbar = () => {
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
-                d="M4 6h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 5h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 5h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z"
+                d="M4 6h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 5h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z"
               />
             )}
           </svg>
@@ -95,7 +95,7 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="lg:hidden bg-navbar"
+          className="lg:hidden bg-black/50 backdrop-blur-lg"
         >
           <ul className="space-y-4 p-4 text-lg">
             <li>

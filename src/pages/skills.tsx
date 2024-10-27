@@ -47,10 +47,10 @@ export default function SkillsPage() {
   return (
     <>
       <Head>
-        <title>Vignesh Kumar | About</title>
+        <title>Vignesh Kumar | Skills</title>
         <meta
           name="description"
-          content="About Vignesh Kumar - A software engineer with 3+ years of experience."
+          content="Skills page of Vignesh Kumar - A software engineer with 3+ years of experience."
         />
       </Head>
       <Layout>
