@@ -27,14 +27,6 @@ export default function HomePage() {
   return (
     <Layout>
       <main className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
-        <p>Hello World!!</p>
-        <p>Hello World!!</p>
-
-        <p>Hello World!!</p>
-        <p>Hello World!!</p>
-        <p>Hello World!!</p>
-        <p>Hello World!!</p>
-        
         {/* Animated Introduction */}
         <div className="text-center">
           {/* "Hello World!" with motion effect */}
@@ -55,7 +47,7 @@ export default function HomePage() {
             transition={{ duration: 1.5 }}
           >
             My name is{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
               Vignesh Kumar
             </span>
           </motion.h1>
@@ -79,7 +71,7 @@ export default function HomePage() {
                     animate="visible"
                     exit="exit"
                     transition={{ duration: 0.5 }}
-                    className="text-yellow-400"
+                    className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500"
                   >
                     {roles[currentRole]}
                   </motion.span>

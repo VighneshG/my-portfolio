@@ -1,3 +1,4 @@
+'use client';
 // src/app/skills.tsx
 import "../app/globals.css";
 import { motion } from "framer-motion";
