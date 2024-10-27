@@ -2,6 +2,7 @@
 import "../app/globals.css";
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout"; // Assuming you have a Layout component
+import Head from "next/head";
 
 const skills = [
   // AWS CDK, Typescript, React, Next Js
@@ -44,31 +45,40 @@ const itemVariants = {
 
 export default function SkillsPage() {
   return (
-    <Layout>
-      <main className="flex flex-col items-center justify-center min-h-screen bg-grey-900 text-white p-8">
-        <h1 className="text-4xl font-bold mb-8">Skills</h1>
-        <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-16"
-          initial="hidden"
-          animate="show"
-          variants={containerVariants}
-        >
-          {skills.map((skill, index) => (
-            <motion.div
-              key={index}
-              className="flex flex-col items-center"
-              variants={itemVariants}
-            >
-              <img
-                src={skill.icon}
-                alt={skill.name}
-                className="w-16 h-16 mb-4"
-              />
-              <span className="text-xl">{skill.name}</span>
-            </motion.div>
-          ))}
-        </motion.div>
-      </main>
-    </Layout>
+    <>
+      <Head>
+        <title>Vignesh Kumar | About</title>
+        <meta
+          name="description"
+          content="About Vignesh Kumar - A software engineer with 3+ years of experience."
+        />
+      </Head>
+      <Layout>
+        <main className="flex flex-col items-center justify-center min-h-screen bg-grey-900 text-white p-8">
+          <h1 className="text-4xl font-bold mb-8">Skills</h1>
+          <motion.div
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-16"
+            initial="hidden"
+            animate="show"
+            variants={containerVariants}
+          >
+            {skills.map((skill, index) => (
+              <motion.div
+                key={index}
+                className="flex flex-col items-center"
+                variants={itemVariants}
+              >
+                <img
+                  src={skill.icon}
+                  alt={skill.name}
+                  className="w-16 h-16 mb-4"
+                />
+                <span className="text-xl">{skill.name}</span>
+              </motion.div>
+            ))}
+          </motion.div>
+        </main>
+      </Layout>
+    </>
   );
 }
