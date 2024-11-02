@@ -29,7 +29,7 @@ export default function HomeComponent() {
 
 	return (
 		<>
-			<main className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
+			<main className="flex flex-col items-center justify-center min-h-screen text-foreground">
 				{/* Animated Introduction */}
 				<div className="text-center">
 					{/* "Hello World!" with motion effect */}
@@ -90,10 +90,9 @@ export default function HomeComponent() {
 							download="Vignesh_Kumar_Resume.pdf"
 							className="relative inline-block text-lg font-semibold text-white px-8 py-4 rounded-lg shadow-lg transition-transform transform-gpu hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-300"
 							style={{
-								background:
-									'linear-gradient(to right, transparent, black, transparent)',
+								
 								border: '2px solid',
-								borderImage: 'linear-gradient(to right, silver, gold) 1',
+								borderImage: 'linear-gradient(to right, cyan, gold) 1',
 							}}
 						>
 							<span className="absolute inset-0 opacity-40 bg-gradient-to-br from-transparent via-black to-transparent blur-lg rounded-lg -z-10"></span>

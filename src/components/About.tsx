@@ -2,7 +2,7 @@
 export default function AboutComponent() {
 	return (
 		<>
-			<main className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground p-4">
+			<main className="flex flex-col items-center justify-center min-h-screen  text-foreground p-4">
 				<h1 className="text-4xl font-bold">About Me</h1>
 				<p className="mt-4 text-lg">
 					I am a software engineer with over 3 years of experience in developing

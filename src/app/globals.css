@@ -4,13 +4,14 @@
 
 /* Define consistent color variables for both light and dark themes */
 :root {
-  --background: #171717;     /* Dark background */
-  --foreground: #ededed;     /* Light foreground text */
+  --background: #0f222e;     /* Dark background */
+  --foreground: white;     /* Light foreground text */
   --navbar: #0a0a0a;         /* Dark navbar */
   --button-bg: #222222;      /* Button background */
-  --button-hover: #333333;   /* Button hover background */
-  --accent-color: #ffcc00;   /* Accent color for buttons, links, etc. */
-  --link-hover: #ffdd33;     /* Lighter accent for hover effects */
+  --button-hover: #00ffd9;   /* Button hover background */
+  --accent-color:  cyan;   /* Accent color for buttons, links, etc. */
+  --link-hover: cyan;     /* Lighter accent for hover effects */
+  --footer: #063755;
 }
 
 body {
@@ -46,4 +47,8 @@ button:hover {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.apply-color {
+  background-color: rgb(red, green, blue);
 }
