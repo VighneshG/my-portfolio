@@ -1,4 +1,4 @@
-// src/components/Layout.tsx
+'use client';
 import Navbar from './Navbar';
 import Footer from './Footer';
 

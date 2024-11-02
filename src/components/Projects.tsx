@@ -1,3 +1,4 @@
+'use client';
 import { projectList } from '@/data/projects';
 import ProjectCard from './ProjectCard';
 

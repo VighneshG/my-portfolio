@@ -1,3 +1,4 @@
+'use client';
 import '../app/globals.css';
 import { motion } from 'framer-motion';
 import { skills } from '../data/skills';

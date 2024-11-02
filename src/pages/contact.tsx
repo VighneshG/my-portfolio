@@ -1,4 +1,4 @@
-// src/pages/contact.tsx
+'use client';
 import Layout from '../components/Layout';
 import '../app/globals.css';
 import Head from 'next/head';

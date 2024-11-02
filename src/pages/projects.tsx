@@ -1,3 +1,4 @@
+'use client';
 import ProjectsComponent from '@/components/Projects';
 import '../app/globals.css';
 import Layout from '../components/Layout';
